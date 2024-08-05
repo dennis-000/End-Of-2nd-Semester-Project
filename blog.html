@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/SRC-LOGO.png" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <title>SRC SPORTS</title>
+</head>
+
+
+<body>
+    <div id="loader" class="bar">
+        <div class="ball"></div>
+    </div>
+    <div id="content" style="display: none;">
+
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <img src="assets/img/SRC-LOGO.png" alt="">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="blog.html" class="nav__link">Blog</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">New Activities</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Book Online</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Events</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="nav__buttons">
+                        <a href="./sign up and sign in/register.html" class="nav__button-link">Login</a>
+                        <a href="./sign up and sign in/register.html" class="nav__button-something">Get Started</a>
+                    </div>
+
+                    <!-- close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+
+        <main class="main">
+            <div class="demo">Hello World</div>
+            <h1>Blog</h1>
+        </main>
+
+
+
+        <footer class="footer">
+            <div class="footer__social">
+                <a href="https://www.facebook.com" target="_blank" class="footer__social-link" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="footer__social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer__social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="footer__social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+
+            <div class="footer__views">
+                <p>Views: <span id="view-counter">0</span></p>
+            </div>
+
+            <div class="footer__captcha">
+                <form action="verify-captcha.php" method="POST">
+                    <div class="g-recaptcha" data-sitekey="6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa"></div><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+
+            <div class="footer__sponsors">
+                <h3>Our Sponsors</h3>
+                <a href="https://www.sponsor1.com" target="_blank">
+                    <img src="./assets/img/zeal.jpeg" alt="Sponsor 1">
+                </a>
+                <a href="https://www.sponsor2.com" target="_blank">
+                    <img src="./assets/img/logo.png" alt="Sponsor 2">
+                </a>
+                <a href="https://www.sponsor3.com" target="_blank">
+                    <img src="./assets/img/mplace.jpg" alt="Sponsor 3">
+                </a>
+            </div>
+        </footer>
+
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+        <script src="assets/js/loader.js"></script>
+        <script>
+            //  view counter script
+            document.addEventListener('DOMContentLoaded', function() {
+                let counterElement = document.getElementById('view-counter');
+                let views = localStorage.getItem('viewCounter') || 0;
+                views++;
+                localStorage.setItem('viewCounter', views);
+                counterElement.textContent = views;
+            });
+
+            function onClick(e) {
+                e.preventDefault();
+                grecaptcha.enterprise.ready(async() => {
+                    const token = await grecaptcha.enterprise.execute('6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa', {
+                        action: 'LOGIN'
+                    });
+                });
+            }
+        </script>
+</body>
+
+</html>
+
+</html>

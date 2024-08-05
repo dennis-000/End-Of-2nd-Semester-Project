@@ -1,0 +1,53 @@
+## Home
+  - Header
+    - Navigation Bar
+    - Social Media Buttons
+  - Main Content
+    - Introduction
+    - Images of Sports (Football, Rugby, Ballet, Table Tennis, Handball, Gymnastics)
+    - Video Background
+    - Media Coverage Links
+  - Footer
+    - Social Media Links
+    - View Counter
+    - Captcha Verification
+
+## Blog
+  - Latest Posts
+  - Categories
+  - Archive
+
+## Register --- On top Seperated
+  - Registration Form
+  - Subscribe Email Button
+
+## About
+  - Overview of SRC Sports Academy
+  - Funding Information
+  - Mission and Vision
+
+## New Activities
+  - Wrestling
+  - Taekwondo
+  - Judo
+  - Volleyball
+  - Forum for Questions
+
+## Book Online
+  - Booking Form
+  - Accessibility Features
+
+## Events
+  - List of Local Competitors
+  - Event Schedule
+  - Details for Spectators
+
+
+
+[Home]-------[Blog]-----[Register]-----[About]----------[New Activities]-------[Book Online]---[Events]
+  |            |             |            |                     |                    |
+  v            v             v            v                     v                    v
+Header    Latest Posts   Registration   Overview            Wrestling            List of Local Competitors
+  |        Categories       Form        Funding              Taekwondo           Event Schedule
+  |        Archive      Subscribe Email Mission & Vision      Judo                Spectator Details
+Footer
