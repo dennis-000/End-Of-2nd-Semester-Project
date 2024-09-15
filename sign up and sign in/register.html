@@ -2,197 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <link rel="stylesheet" href="register.css" />
-    <link rel="stylesheet" href="../assets/css/loader.css">
-    <link rel="stylesheet" href="register-nav.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentecost University SRC Sports Academy Registration</title>
 
-    <title>Login Page</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="register.css">
+
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
+    <!-- Loader -->
     <div id="loader" class="bar">
         <div class="ball"></div>
     </div>
+
+    <!-- Content -->
     <div id="content" style="display: none;">
-
-
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="../index.html" class="nav__logo">
-                    <img src="../assets/img/SRC-LOGO.png" alt="">
+                    <img src="../assets/img/SRC-LOGO.png" alt="SRC Logo">
                 </a>
                 <div class="nav__menu" id="nav-menu">
-
                     <ul class="nav__list">
-
-                        <li class="nav__item">
-                            <a href="../index.html" class="nav__link">Home</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Blog</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">About</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">New Activities</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Book Online</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Events</a>
-                        </li>
-
+                        <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="../blog.html" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="../about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="../new-activity.html" class="nav__link">New Activities</a></li>
+                        <li class="nav__item"><a href="../book-online.html" class="nav__link">Book Online</a></li>
+                        <li class="nav__item"><a href="../events.html" class="nav__link">Events</a></li>
                     </ul>
-                    <!-- 
-                    <div class="nav__buttons">
-                        <a href="#" class="nav__button-link">Login</a>
-                        <a href="#" class="nav__button-something">Get Started</a>
-                    </div> -->
 
-                    <!-- close button -->
+
+                    <!-- Close button -->
                     <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
+                        <i class="fas fa-times"></i>
                     </div>
                 </div>
 
                 <!-- Toggle button -->
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
+                    <i class="fas fa-bars"></i>
                 </div>
             </nav>
         </header>
 
+        <div class="container">
+            <h1><i class="fas fa-running"></i> Pentecost University SRC Sports Academy Registration</h1>
 
-
-        <div class="container-1" id="container">
-            <div class="form-container sign-up">
-                <form>
-                    <h1>Create Account</h1>
-
-
-                    <!-- SOCIAL -->
-                    <div class="social-icons">
-                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-
-
-                    <span>or use your email for registeration</span>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <!-- FOR NEWSLETTER -->
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="consent" name="consent" required />
-                        <label for="consent">I agree to receive emails and accept the <a href="#">terms and conditions</a>.</label>
-                    </div>
-                    <button>Sign Up</button>
-                </form>
-
-            </div>
-            <div class="form-container sign-in">
-                <form>
-
-
-
-
-                    <!-- SIGN IN -->
-                    <h1>Sign In</h1>
-                    <!-- SOCIAL -->
-                    <div class="social-icons">
-                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-
-                    <span>or use your email password</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <a href="#">Forget Your Password?</a>
-                    <button>Sign In</button>
-                </form>
-            </div>
-            <div class="toggle-container">
-                <div class="toggle">
-                    <div class="toggle-panel toggle-left">
-                        <h1>Welcome Back!</h1>
-                        <p>Enter your personal details to use all of site features</p>
-                        <button class="hidden" id="login">Sign In</button>
-                    </div>
-
-
-                    <div class="toggle-panel toggle-right">
-                        <h1>Hello, Friend!</h1>
-                        <p>
-                            Register with your personal details to use all of site features
-                        </p>
-                        <button class="hidden" id="register">Sign Up</button>
-                    </div>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName"><i class="fas fa-user"></i> Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required aria-required="true">
+                    <span class="error" id="fullNameError"></span>
                 </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId"><i class="fas fa-id-card"></i> Student ID</label>
+                    <input type="text" id="studentId" name="studentId" required aria-required="true">
+                    <span class="error" id="studentIdError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob"><i class="fas fa-calendar-alt"></i> Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required aria-required="true">
+                    <span class="error" id="dobError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender"><i class="fas fa-venus-mars"></i> Gender</label>
+                    <select id="gender" name="gender" required aria-required="true">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error" id="genderError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="sports"><i class="fas fa-futbol"></i> Preferred Sports (select multiple)</label>
+                    <select id="sports" name="sports" multiple required aria-required="true">
+                        <option value="football">Football</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="volleyball">Volleyball</option>
+                        <option value="athletics">Athletics</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="tennis">Tennis</option>
+                    </select>
+                    <span class="error" id="sportsError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience"><i class="fas fa-trophy"></i> Sports Experience</label>
+                    <textarea id="experience" name="experience" rows="4" required aria-required="true"></textarea>
+                    <span class="error" id="experienceError"></span>
+                </div>
+
+                <!-- Google reCAPTCHA -->
+                <div class="g-recaptcha" data-sitekey="6LdFpDEqAAAAAJZiRT2wNClFWVFoLIHaedDrSoWQ"></div>
+                <span class="error" id="recaptchaError"></span>
+
+                <div class="form-group">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+
+            <div id="successMessage"></div>
+
+            <!-- Newsletter Subscription -->
+            <div class="newsletter">
+                <h2><i class="fas fa-newspaper"></i> Subscribe to Our Newsletter</h2>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" id="newsletterEmail" placeholder="Enter your email" required aria-required="true">
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
             </div>
         </div>
+    </div>
 
+    <!-- JavaScript File -->
+    <script src="register.js"></script>
 
-
-
-        <!-- 
-        <footer class="footer">
-            <div class="footer__social">
-                <a href="https://www.facebook.com" target="_blank" class="footer__social-link" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.twitter.com" target="_blank" class="footer__social-link" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="footer__social-link" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" class="footer__social-link" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-
-
-            <div class="footer__views">
-                <p>Views: <span id="view-counter">0</span></p>
-            </div>
-
-            <div class="footer__captcha">
-                <form action="verify-captcha.php" method="POST">
-                    <div class="g-recaptcha" data-sitekey="6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa"></div><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
-
-            <div class="footer__sponsors">
-                <h3>Our Sponsors</h3>
-                <a href="https://www.sponsor1.com" target="_blank">
-                    <img src="./assets/img/zeal.jpeg" alt="Sponsor 1">
-                </a>
-                <a href="https://www.sponsor2.com" target="_blank">
-                    <img src="./assets/img/logo.png" alt="Sponsor 2">
-                </a>
-                <a href="https://www.sponsor3.com" target="_blank">
-                    <img src="./assets/img/mplace.jpg" alt="Sponsor 3">
-                </a>
-            </div> -->
-        </footer>
-        <script src="register.js"></script>
-        <script src="../assets/js/loader.js"></script>
-
+    <script>
+        // Example script to show content after the loader is hidden
+        window.addEventListener('load', () => {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        });
+    </script>
 </body>
 
 </html>

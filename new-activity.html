@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/SRC-LOGO.png" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/new-activity.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <title>SRC SPORTS - New Activities</title>
+</head>
+
+
+<body>
+    <div id="loader" class="bar">
+        <div class="ball"></div>
+    </div>
+    <div id="content" style="display: none;">
+
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <img src="assets/img/SRC-LOGO.png" alt="">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="blog.html" class="nav__link">Blog</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="new-activity.html" class="nav__link">New Activities</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="book-online.html" class="nav__link">Book Online</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="events.html" class="nav__link">Events</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="nav__buttons">
+                        <!-- <a href="./sign up and sign in/register.html" class="nav__button-link">Login</a> -->
+                        <a href="./sign up and sign in/register.html" class="nav__button-something">Get Started</a>
+                    </div>
+
+                    <!-- close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <!-- ======== CONTENT ============== -->
+
+        <main class="main">
+            <section class="hero">
+                <h1>Discover Our Exciting New Activities</h1>
+                <p>Expand your horizons and challenge yourself with our latest sports offerings!</p>
+            </section>
+
+            <section class="activities">
+                <div class="activity-container">
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="assets/img/wrestling.jpg" alt="Wrestling">
+                        </div>
+                        <div class="activity-info">
+                            <h2>Wrestling</h2>
+                            <p>Develop strength, agility, and mental toughness through the ancient sport of wrestling.</p>
+                            <ul>
+                                <li>Learn various wrestling styles: Freestyle, Greco-Roman, and Folkstyle</li>
+                                <li>Improve physical fitness and body awareness</li>
+                                <li>Build self-confidence and discipline</li>
+                            </ul>
+                            <a href="#" class="join-btn">Join Wrestling</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card reverse">
+                        <div class="activity-image">
+                            <img src="assets/img/taekwondo.jpg" alt="Taekwondo">
+                        </div>
+                        <div class="activity-info">
+                            <h2>Taekwondo</h2>
+                            <p>Master the Korean art of self-defense and improve your overall physical and mental well-being.</p>
+                            <ul>
+                                <li>Learn powerful kicks and striking techniques</li>
+                                <li>Enhance flexibility, balance, and coordination</li>
+                                <li>Develop self-discipline and respect</li>
+                            </ul>
+                            <a href="#" class="join-btn">Join Taekwondo</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="assets/img/judo.jpg" alt="Judo">
+                        </div>
+                        <div class="activity-info">
+                            <h2>Judo</h2>
+                            <p>Experience the gentle way of Judo and learn efficient techniques for self-defense and competition.</p>
+                            <ul>
+                                <li>Master throwing techniques and ground grappling</li>
+                                <li>Improve balance, coordination, and body control</li>
+                                <li>Learn the principles of maximum efficiency with minimal effort</li>
+                            </ul>
+                            <a href="#" class="join-btn">Join Judo</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card reverse">
+                        <div class="activity-image">
+                            <img src="assets/img/volleyball.jpg" alt="Volleyball">
+                        </div>
+                        <div class="activity-info">
+                            <h2>Volleyball</h2>
+                            <p>Join our dynamic volleyball program and experience the thrill of this fast-paced team sport.</p>
+                            <ul>
+                                <li>Develop essential skills: serving, passing, setting, and spiking</li>
+                                <li>Enhance teamwork and communication abilities</li>
+                                <li>Improve cardiovascular fitness and hand-eye coordination</li>
+                            </ul>
+                            <a href="#" class="join-btn">Join Volleyball</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card">
+                        <div class="activity-image">
+                            <img src="assets/img/rock-climbing.jpg" alt="Rock Climbing">
+                        </div>
+                        <div class="activity-info">
+                            <h2>Rock Climbing</h2>
+                            <p>Challenge yourself physically and mentally with our exciting indoor rock climbing program.</p>
+                            <ul>
+                                <li>Learn proper climbing techniques and safety procedures</li>
+                                <li>Build upper body strength and improve flexibility</li>
+                                <li>Develop problem-solving skills and overcome fears</li>
+                            </ul>
+                            <a href="#" class="join-btn">Join Rock Climbing</a>
+                        </div>
+                    </div>
+
+                    <div class="activity-card reverse">
+                        <div class="activity-image">
+                            <img src="assets/img/ultimate-frisbee.jpg" alt="Ultimate Frisbee">
+                        </div>
+                        <div class="activity-info">
+                            <h2>Ultimate Frisbee</h2>
+                            <p>Experience the fast-paced, non-contact sport that combines elements of football, soccer, and basketball.</p>
+                            <ul>
+                                <li>Improve cardiovascular endurance and agility</li>
+                                <li>Develop throwing and catching skills</li>
+                                <li>Learn strategies and enjoy a sport that promotes fair play</li>
+                            </ul>
+                            <a href="#" class="join-btn">Join Ultimate Frisbee</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="forum">
+                <h2>Activity Forum</h2>
+                <p>Have questions about our new activities? Ask here and get answers from our sports coordinators and fellow participants.</p>
+
+                <div class="forum-container">
+                    <div class="forum-posts">
+                        <!-- Forum posts will be dynamically added here -->
+                    </div>
+
+                    <form id="question-form" class="question-form">
+                        <textarea id="question-input" placeholder="Ask your question here..." required></textarea>
+                        <button type="submit">Submit Question</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+
+
+
+        <footer class="footer">
+            <div class="footer__social">
+                <a href="https://www.facebook.com" target="_blank" class="footer__social-link" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="footer__social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer__social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="footer__social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+
+            <div class="footer__views">
+                <p>Views: <span id="view-counter">0</span></p>
+            </div>
+
+
+
+
+            <div class="footer__sponsors">
+                <h3>Our Sponsors</h3>
+                <a href="https://www.sponsor1.com" id="zeal" target="_blank">
+                    <img src="./assets/img/zeal.png" alt="Sponsor 1">
+                </a>
+                <a href="https://www.sponsor2.com" target="_blank">
+                    <img src="./assets/img/ug.png" alt="Sponsor 2">
+                </a>
+                <a href="https://www.sponsor3.com" target="_blank">
+                    <img src="./assets/img/mplace.jpg" alt="Sponsor 3">
+                </a>
+            </div>
+            <div class="footer__media-coverage">
+                <h3>Sports Media Coverage</h3>
+                <ul>
+                    <li><a href="https://olympics.com/en/news/" target="_blank">Olympics News Feed</a></li>
+                    <li><a href="https://www.bbc.com/sport/olympics" target="_blank">BBC Olympics</a></li>
+                    <li><a href="https://www.nbcolympics.com/" target="_blank">NBC Olympics</a></li>
+                    <li><a href="https://www.eurosport.com/olympics/" target="_blank">Eurosport Olympics</a></li>
+                    <li><a href="https://www.espn.com/" target="_blank">ESPN</a></li>
+                    <li><a href="https://www.skysports.com/" target="_blank">Sky Sports</a></li>
+                    <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup" target="_blank">FIFA World Cup</a></li>
+                    <li><a href="https://www.uefa.com/" target="_blank">UEFA</a></li>
+                    <li><a href="https://www.nba.com/" target="_blank">NBA</a></li>
+                    <li><a href="https://www.formula1.com/" target="_blank">Formula 1</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/swiper.js"></script>
+        <script src="assets/js/loader.js"></script>
+        <script>
+            //  view counter script
+            document.addEventListener('DOMContentLoaded', function() {
+                let counterElement = document.getElementById('view-counter');
+                let views = localStorage.getItem('viewCounter') || 0;
+                views++;
+                localStorage.setItem('viewCounter', views);
+                counterElement.textContent = views;
+            });
+        </script>
+</body>
+
+</html>

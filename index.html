@@ -4,270 +4,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- icon logo -->
     <link rel="shortcut icon" href="assets/img/SRC-LOGO.png" type="image/x-icon">
+    <!-- Google recaptha -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa"></script>
-
+    <!-- cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/loader.css">
 
-    <title>SRC SPORTS</title>
-</head>
+    <body>
+        <div id="loader" class="bar">
+            <div class="ball"></div>
+        </div>
+        <div id="content" style="display: none;">
 
 
-<body>
-    <div id="loader" class="bar">
-        <div class="ball"></div>
-    </div>
-    <div id="content" style="display: none;">
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <a href="index.html" class="nav__logo">
+                        <img src="assets/img/SRC-LOGO.png" alt="">
+                    </a>
+                    <div class="nav__menu" id="nav-menu">
 
+                        <ul class="nav__list">
 
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="index.html" class="nav__logo">
-                    <img src="assets/img/SRC-LOGO.png" alt="">
-                </a>
-                <div class="nav__menu" id="nav-menu">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link">Home</a>
+                            </li>
 
-                    <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="blog.html" class="nav__link">Blog</a>
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="index.html" class="nav__link">Home</a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="about.html" class="nav__link">About</a>
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="blog.html" class="nav__link">Blog</a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="new-activity.html" class="nav__link">New Activities</a>
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">About</a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="book-online.html" class="nav__link">Book Online</a>
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">New Activities</a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="events.html" class="nav__link">Events</a>
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Book Online</a>
-                        </li>
+                        </ul>
 
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Events</a>
-                        </li>
+                        <div class="nav__buttons">
+                            <a href="./sign up and sign in/register.html" class="nav__button-link">Login</a>
+                            <a href="./sign up and sign in/register.html" class="nav__button-something">Get Started</a>
+                        </div>
 
-                    </ul>
-
-                    <div class="nav__buttons">
-                        <a href="./sign up and sign in/register.html" class="nav__button-link">Login</a>
-                        <a href="./sign up and sign in/register.html" class="nav__button-something">Get Started</a>
+                        <!-- close button -->
+                        <div class="nav__close" id="nav-close">
+                            <i class="ri-close-line"></i>
+                        </div>
                     </div>
 
-                    <!-- close button -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
                     </div>
-                </div>
+                </nav>
+            </header>
 
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
-            </nav>
-        </header>
+            <main class="main">
+                <section class="home">
 
-        <main class="main">
-            <section class="home">
-
-                <video class="home__video" autoplay muted loop>
+                    <video class="home__video" autoplay muted loop>
             <source src="assets/videos/bg2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
-                <div class="home__container container">
-                    <div class="home__content">
-                        <div class="home__data">
-                            <h2 class="home__subtitle">
-                                Welcome to the SRC Sports Academy!
-                            </h2>
+                    <div class="home__container container">
+                        <div class="home__content" id="home-content">
+                            <div class="home__data">
 
-                            <h1 class="home__title">
-                                SRC Sports Academy is dedicated to promoting sports and <br>well-being in our university.
-                            </h1>
+                                <!-- ==== SEARCH BAR ===== -->
+                                <div class="search-container">
+                                    <div class="search-bar">
+                                        <input type="text" id="search-input" placeholder="Search...">
+                                        <button id="search-button">Search</button>
+                                    </div>
+                                </div>
 
-                            <p class="home__description">
-                                Here, we inspire and nurture the next generation of athletes.
-                            </p>
-                            <a href="#" class="home__button">
-                           More Details
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                <h2 class="home__subtitle">
+                                    Welcome to the SRC Sports Academy!
+                                </h2>
 
+                                <h1 class="home__title">
+                                    SRC Sports Academy is dedicated to promoting sports and <br>well-being in our university.
+                                </h1>
 
-            <!-- Slide 1 -->
-            <section class="card">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-slide--one">
-                            <span>Football</span>
-                            <div>
-                                <h2>Play for the name on the front of the shirt.</h2>
-                                <p>
+                                <p class="home__description">
+                                    Here, we inspire and nurture the next generation of athletes.
 
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide swiper-slide--two">
-                            <span>Rugby</span>
-                            <div>
-                                <h2>Rugby: a gentleman's game.</h2>
-                                <p>
-
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide swiper-slide--three">
-                            <span>Ballet</span>
-                            <div>
-                                <h2>Dance is the hidden language of the soul.</h2>
-                                <p>
-
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Slide 4 -->
-                        <div class="swiper-slide swiper-slide--four">
-                            <span>Table Tennis</span>
-                            <div>
-                                <h2>Table tennis: precision and speed.</h2>
-
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Slide 5 -->
-                        <div class="swiper-slide swiper-slide--five">
-                            <span>Gymnastics</span>
-                            <div>
-                                <h2>Grace and strength in motion.</h2>
-                                <p>
-                                </p>
                             </div>
                         </div>
                     </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                </section>
+
+
+                <!-- Slide 1 -->
+                <section class="card">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide--one">
+                                <span>Football</span>
+                                <div>
+                                    <h2>Play for the name on the front of the shirt.</h2>
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide swiper-slide--two">
+                                <span>Rugby</span>
+                                <div>
+                                    <h2>Rugby: a gentleman's game.</h2>
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide swiper-slide--three">
+                                <span>Ballet</span>
+                                <div>
+                                    <h2>Dance is the hidden language of the soul.</h2>
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide swiper-slide--four">
+                                <span>Table Tennis</span>
+                                <div>
+
+                                    <h2>Table tennis: precision and speed.</h2>
+
+                                </div>
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide swiper-slide--five">
+                                <span>Gymnastics</span>
+                                <div>
+                                    <h2>Grace and strength in motion.</h2>
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+
+
+                <hr>
+
+
+                <div class="content-section">
+                    <div class="text-content">
+                        <h2>Pentecost SRC Sports Academy </h2>
+                        <p>nurtures young athletes with top-notch training programs and facilities, fostering talent and sportsmanship across various disciplines. Our experienced coaches and comprehensive programs ensure that each athlete reaches their full
+                            potential in a supportive environment.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="./assets/img/home-content-1.jpg" alt="Sports Academy in Pentecost University">
+                    </div>
                 </div>
-            </section>
 
-
-            <hr>
-
-
-            <div class="content-section">
-                <div class="text-content">
-                    <h2>Pentecost SRC Sports Academy </h2>
-                    <p>nurtures young athletes with top-notch training programs and facilities, fostering talent and sportsmanship across various disciplines. Our experienced coaches and comprehensive programs ensure that each athlete reaches their full
-                        potential in a supportive environment.</p>
+                <div class="content-section-reverse">
+                    <div class="image-content">
+                        <img src="./assets/img/home-content-2.jpg" alt="Athletes in Action in Pentecost University">
+                    </div>
+                    <div class="text-content">
+                        <h2>Teamwork at Pentecost SRC Sports Academy
+                        </h2>
+                        <p>Pentecost SRC Sports Academy nurtures young athletes with top-notch training programs and facilities, fostering talent and sportsmanship across various disciplines. Our experienced coaches and comprehensive programs ensure that
+                            each athlete reaches their full potential in a supportive environment.</p>
+                    </div>
                 </div>
-                <div class="image-content">
-                    <img src="./assets/img/home-content-1.jpg" alt="Sports Academy">
+                <a href="book-online.html" class="booking__btn">Booking Form</a>
+
+
+                <!-- ======like followers card ======== -->
+                <div class="followers-container">
+                    <div class="folowers-card">
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="followers" data-target="24000"></div>
+                        <span>Facebook Followers</span>
+
+                        <div class="icon">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <div class="followers" data-target="35000"></div>
+                        <span>YouTube Followers</span>
+                    </div>
                 </div>
+                <!-- ========Twitter Feed-->
+                <div class="footer__twitter-feed">
+                    <h3>Pentecost University Sports Academy Updates</h3>
+                    <a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/Olympics?ref_src=twsrc%5Etfw">Tweets by Olympics. To Explore.</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+        </div>
+        <!-- News letter -->
+        <section id="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletter-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit" class="cta-button">Subscribe</button>
+                <div class="g-recaptcha" data-sitekey="6Lf2RTEqAAAAAE0x8PsfSHdL3RjNfDVCrhOaGHaK"></div>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__social">
+                <a href="https://www.facebook.com" target="_blank" class="footer__social-link" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="footer__social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer__social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="footer__social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
             </div>
 
-            <div class="content-section-reverse">
-                <div class="image-content">
-                    <img src="./assets/img/home-content-2.jpg" alt="Athletes in Action">
-                </div>
-                <div class="text-content">
-                    <h2>Teamwork at Pentecost SRC Sports Academy
-                    </h2>
-                    <p>Pentecost SRC Sports Academy nurtures young athletes with top-notch training programs and facilities, fostering talent and sportsmanship across various disciplines. Our experienced coaches and comprehensive programs ensure that each
-                        athlete reaches their full potential in a supportive environment.</p>
-                </div>
+
+            <div class="footer__views">
+                <p>&copy; 2024 SRC Sports Academy. All rights reserved.</p>
+                <p>Views: <span id="view-counter">0</span></p>
             </div>
 
 
-            <footer class="footer">
-                <div class="footer__social">
-                    <a href="https://www.facebook.com" target="_blank" class="footer__social-link" title="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.twitter.com" target="_blank" class="footer__social-link" title="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" class="footer__social-link" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" class="footer__social-link" title="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
 
+            <div class="footer__sponsors">
+                <h3>Our Sponsors</h3>
+                <a href="https://www.zeal.com" id="zeal" target="_blank">
+                    <img src="./assets/img/zeal.png" alt="ZEAL_LOGO">
+                </a>
+                <a href="https://www.ug.edu.gh/" target="_blank">
+                    <img src="./assets/img/ug.png" alt="UG_LOGO">
+                </a>
+                <a href="https://www.markersplace.com" target="_blank">
+                    <img src="./assets/img/mplace.jpg" alt="Sponsor 3">
+                </a>
+                <a href="https://www.harvard.edu/" target="_blank">
+                    <img src="/assets/img/HARVARD.png" alt="HARVARD LOGO">
+                </a>
+            </div>
 
-                <div class="footer__views">
-                    <p>Views: <span id="view-counter">0</span></p>
-                </div>
+            <!-- MEDIA COVERAGE -->
+            <div class="footer__media-coverage">
+                <h3>Sports Media Coverage</h3>
+                <ul>
+                    <li><a href="https://olympics.com/en/news/" target="_blank">Olympics News Feed</a></li>
+                    <li><a href="https://www.bbc.com/sport/olympics" target="_blank">BBC Olympics</a></li>
+                    <li><a href="https://www.nbcolympics.com/" target="_blank">NBC Olympics</a></li>
+                    <li><a href="https://www.eurosport.com/olympics/" target="_blank">Eurosport Olympics</a></li>
+                    <li><a href="https://www.espn.com/" target="_blank">ESPN</a></li>
+                    <li><a href="https://www.skysports.com/" target="_blank">Sky Sports</a></li>
+                    <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup" target="_blank">FIFA World Cup</a></li>
+                    <li><a href="https://www.uefa.com/" target="_blank">UEFA</a></li>
+                    <li><a href="https://www.nba.com/" target="_blank">NBA</a></li>
+                    <li><a href="https://www.formula1.com/" target="_blank">Formula 1</a></li>
+                </ul>
+            </div>
 
-                <div class="footer__captcha">
-                    <form action="verify-captcha.php" method="POST">
-                        <div class="g-recaptcha" data-sitekey="6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa"></div><br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-
-
-                <div class="footer__sponsors">
-                    <h3>Our Sponsors</h3>
-                    <a href="https://www.sponsor1.com" target="_blank">
-                        <img src="./assets/img/zeal.jpeg" alt="Sponsor 1">
-                    </a>
-                    <a href="https://www.sponsor2.com" target="_blank">
-                        <img src="./assets/img/logo.png" alt="Sponsor 2">
-                    </a>
-                    <a href="https://www.sponsor3.com" target="_blank">
-                        <img src="./assets/img/mplace.jpg" alt="Sponsor 3">
-                    </a>
-                </div>
-            </footer>
+        </footer>
 
 
 
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
-            <script src="assets/js/main.js"></script>
-            <script src="assets/js/swiper.js"></script>
-            <script src="assets/js/loader.js"></script>
-            <script>
-                //  view counter script
-                document.addEventListener('DOMContentLoaded', function() {
-                    let counterElement = document.getElementById('view-counter');
-                    let views = localStorage.getItem('viewCounter') || 0;
-                    views++;
-                    localStorage.setItem('viewCounter', views);
-                    counterElement.textContent = views;
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/swiper.js"></script>
+        <script src="assets/js/loader.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let counterElement = document.getElementById('view-counter');
+                let views = localStorage.getItem('viewCounter') || 0;
+                views++;
+                localStorage.setItem('viewCounter', views);
+                counterElement.textContent = views;
+            });
+
+            $(document).ready(function() {
+                // Hamburger menu
+                $('.hamburger').click(function() {
+                    $('.nav-links').toggleClass('active');
                 });
 
-                function onClick(e) {
-                    e.preventDefault();
-                    grecaptcha.enterprise.ready(async() => {
-                        const token = await grecaptcha.enterprise.execute('6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa', {
-                            action: 'LOGIN'
-                        });
-                    });
+                // Page view counter
+                if (localStorage.getItem('pageViews')) {
+                    let views = parseInt(localStorage.getItem('pageViews')) + 1;
+                    localStorage.setItem('pageViews', views);
+                } else {
+                    localStorage.setItem('pageViews', 1);
                 }
-            </script>
-</body>
+                $('#page-views').text(localStorage.getItem('pageViews'));
 
-</html>
+                // Search functionality
+                $('#search-button').click(function() {
+                    let searchTerm = $('#search-input').val().toLowerCase();
+                    $('body').unmark();
+                    $('body').mark(searchTerm);
+                });
+
+                // Newsletter form submission
+                $('#newsletter-form').submit(function(e) {
+                    e.preventDefault();
+                    if (grecaptcha.getResponse()) {
+                        alert('Thank you for subscribing!');
+                        $('#newsletter-form')[0].reset();
+                        grecaptcha.reset();
+                    } else {
+                        alert('Please complete the reCAPTCHA.');
+                    }
+                });
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+
+    </body>
 
 </html>

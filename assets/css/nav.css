@@ -12,7 +12,7 @@
             --body-header-color: hsl(0, 0%, 97%);
             /*========== Font and typography ==========*/
             /*.5rem = 8px | 1rem = 16px ...*/
-            --body-font: "Poppins", sans-serif;
+            --body-font: "Poppins", sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             --second-font: "Lora", serif;
             --biggest-font-size: 2.25rem;
             --normal-font-size: .938rem;
@@ -111,9 +111,9 @@
             height: auto;
         }
         
-        .container {
+        .nav-container {
             max-width: 1120px;
-            margin-inline: 1.5rem;
+            /* margin-inline: 1.5rem; */
         }
         
         .main {
@@ -322,12 +322,15 @@
                 padding-top: 10rem;
             }
         }
+        /* FOOTER */
         
         .footer {
             background-color: #FDB515;
             color: var(--text-color);
             padding: 20px 0;
             text-align: center;
+            padding: 2rem 0;
+            font-family: Arial, sans-serif;
         }
         
         .footer__social {
@@ -378,4 +381,60 @@
         
         .footer__contact a:hover {
             color: #0056b3;
+        }
+        /* MEDIA COVERAGE */
+        
+        .footer h3 {
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        
+        .footer__media-coverage ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .footer__media-coverage li {
+            text-align: center;
+        }
+        
+        .footer__media-coverage a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid #ffffff;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .footer__media-coverage a:hover {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+        
+        @media (max-width: 768px) {
+            .footer__media-coverage ul {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+        
+        .footer__twitter-feed {
+            margin-top: 3rem;
+        }
+        
+        .footer__media-coverage,
+        .footer__twitter-feed {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
         }

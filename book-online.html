@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/SRC-LOGO.png" type="image/x-icon" alt="SRC logo">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/book-online.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <title>Book Online</title>
+</head>
+
+
+<body>
+    <div id="loader" class="bar">
+        <div class="ball"></div>
+    </div>
+    <div id="content" style="display: none;">
+
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <img src="assets/img/SRC-LOGO.png" alt="SRC logo">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="blog.html" class="nav__link">Blog</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="new-activity.html" class="nav__link">New Activities</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="book-online.html" class="nav__link">Book Online</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="events.html" class="nav__link">Events</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="nav__buttons">
+                        <!-- <a href="./sign up and sign in/register.html" class="nav__button-link">Login</a> -->
+                        <a href="./sign up and sign in/register.html" class="nav__button-something">Get Started</a>
+                    </div>
+
+                    <!-- close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+        <!-- ========= CONTENT ====== -->
+        <!-- Add this section after the header and before the footer -->
+        <main class="main">
+            <section class="booking-section">
+                <h1>Book Your Sports Activity</h1>
+                <p>Reserve your spot in our exciting sports activities quickly and easily!</p>
+
+                <div class="booking-container">
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group ">
+                            <label for="activity">Select Activity:</label>
+                            <select id="activity" name="activity " required>
+                        <option value="">Choose an activity</option>
+                        <option value="wrestling">Wrestling</option>
+                        <option value="taekwondo">Taekwondo</option>
+                        <option value="judo">Judo</option>
+                        <option value="volleyball">Volleyball</option>
+                        <option value="rock-climbing">Rock Climbing</option>
+                        <option value="ultimate-frisbee">Ultimate Frisbee</option>
+                    </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="time">Time:</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests or Accommodations:</label>
+                            <textarea id="special-requests" name="special-requests" rows="3 "></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="submit-btn">Book Now</button>
+                        </div>
+                    </form>
+
+                    <div class="payment-section">
+                        <h2>Payment Options</h2>
+                        <p>Choose your preferred payment method:</p>
+                        <div class="payment-options">
+                            <button class="payment-btn" data-payment="credit-card">Credit Card</button>
+                            <button class="payment-btn" data-payment="paypal">PayPal</button>
+                            <button class="payment-btn" data-payment="bank-transfer">Bank Transfer</button>
+                        </div>
+                        <div id="payment-details" class="payment-details">
+                            <!-- Payment details will be dynamically inserted here -->
+                            <!-- ===== BACKEND STUFF == WILL CONTINUE LATER ======-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <footer class="footer ">
+            <div class="footer__social ">
+                <a href="https://www.facebook.com " target="_blank " class="footer__social-link " title="Facebook ">
+                    <i class="fab fa-facebook-f "></i>
+                </a>
+                <a href="https://www.twitter.com " target="_blank " class="footer__social-link " title="Twitter ">
+                    <i class="fab fa-twitter "></i>
+                </a>
+                <a href="https://www.instagram.com " target="_blank " class="footer__social-link " title="Instagram ">
+                    <i class="fab fa-instagram "></i>
+                </a>
+                <a href="https://www.linkedin.com " target="_blank " class="footer__social-link " title="LinkedIn ">
+                    <i class="fab fa-linkedin-in "></i>
+                </a>
+            </div>
+
+
+            <div class="footer__views ">
+                <p>Views: <span id="view-counter ">0</span></p>
+            </div>
+
+            <div class="footer__captcha ">
+                <form action="verify-captcha.php " method="POST ">
+                    <div class="g-recaptcha " data-sitekey="6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa "></div><br>
+                    <input type="submit " value="Submit ">
+                </form>
+            </div>
+
+
+            <div class="footer__sponsors ">
+                <h3>Our Sponsors</h3>
+                <a href="https://www.sponsor1.com " id="zeal " target="_blank ">
+                    <img src="./assets/img/zeal.png " alt="Sponsor 1 ">
+                </a>
+                <a href="https://www.sponsor2.com " target="_blank ">
+                    <img src="./assets/img/ug.png " alt="Sponsor 2 ">
+                </a>
+                <a href="https://www.sponsor3.com " target="_blank ">
+                    <img src="./assets/img/mplace.jpg " alt="Sponsor 3 ">
+                </a>
+            </div>
+            <div class="footer__media-coverage">
+                <h3>Sports Media Coverage</h3>
+                <ul>
+                    <li><a href="https://olympics.com/en/news/" target="_blank">Olympics News Feed</a></li>
+                    <li><a href="https://www.bbc.com/sport/olympics" target="_blank">BBC Olympics</a></li>
+                    <li><a href="https://www.nbcolympics.com/" target="_blank">NBC Olympics</a></li>
+                    <li><a href="https://www.eurosport.com/olympics/" target="_blank">Eurosport Olympics</a></li>
+                    <li><a href="https://www.espn.com/" target="_blank">ESPN</a></li>
+                    <li><a href="https://www.skysports.com/" target="_blank">Sky Sports</a></li>
+                    <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup" target="_blank">FIFA World Cup</a></li>
+                    <li><a href="https://www.uefa.com/" target="_blank">UEFA</a></li>
+                    <li><a href="https://www.nba.com/" target="_blank">NBA</a></li>
+                    <li><a href="https://www.formula1.com/" target="_blank">Formula 1</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/swiper.js"></script>
+        <script src="assets/js/loader.js"></script>
+        <script>
+            //  view counter script
+            document.addEventListener('DOMContentLoaded', function() {
+                let counterElement = document.getElementById('view-counter');
+                let views = localStorage.getItem('viewCounter') || 0;
+                views++;
+                localStorage.setItem('viewCounter', views);
+                counterElement.textContent = views;
+            });
+        </script>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/SRC-LOGO.png" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld0uRwqAAAAAGbjtkdkh5wUzh1DkSqwbePfNrpa"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/events.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <title>Book Online</title>
+</head>
+
+<body>
+    <div id="loader" class="bar">
+        <div class="ball"></div>
+    </div>
+    <div id="content" style="display: none;">
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <img src="assets/img/SRC-LOGO.png" alt="SRC logo">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="blog.html" class="nav__link">Blog</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">About</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="new-activity.html" class="nav__link">New Activities</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="book-online.html" class="nav__link">Book Online</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="events.html" class="nav__link">Events</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="nav__buttons">
+                        <!-- <a href="./sign up and sign in/register.html" class="nav__button-link">Login</a> -->
+                        <a href="./sign up and sign in/register.html" class="nav__button-something">Get Started</a>
+                    </div>
+
+                    <!-- close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ============ EVENTS CONTENTS ===================== -->
+        <main class="main">
+
+            <!-- ==EVENT== -->
+            <section class="events">
+                <h1 class="events__title">Upcoming <span class="highlight">Events</span></h1>
+                <div class="events__container">
+                    <div class="event__card">
+                        <div class="event__image-container">
+                            <img src="assets/img/football.jpg" alt="Football Match" class="event__image">
+                            <div class="event__overlay">
+                                <span class="event__date">Aug 30,
+                                        2024</span>
+                            </div>
+                        </div>
+                        <div class="event__content">
+                            <h2 class="event__name">Inter-Hall Football Tournament
+                            </h2>
+                            <p class="event__description">Witness thrilling football matches between halls of residence.
+                            </p>
+                            <a href="#" class="event__button">Learn More <i
+                                        class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- ==EVENT== -->
+                    <div class="event__card">
+                        <div class="event__image-container">
+                            <img src="assets/img/basketball.jpg" alt="Basketball Tournament" class="event__image">
+                            <div class="event__overlay">
+                                <span class="event__date">Sep 15,
+                                        2024</span>
+                            </div>
+                        </div>
+                        <div class="event__content">
+                            <h2 class="event__name">Basketball Championship
+                            </h2>
+                            <p class="event__description">Annual basketball championship featuring top university teams.
+                            </p>
+                            <a href="#" class="event__button">Learn More <i
+                                        class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- ==EVENT== -->
+                    <div class="event__card">
+                        <div class="event__image-container">
+                            <img src="assets/img/athletics.jpg" alt="Athletics Meet" class="event__image">
+                            <div class="event__overlay">
+                                <span class="event__date">Oct 5, 2024</span>
+                            </div>
+                        </div>
+                        <div class="event__content">
+                            <h2 class="event__name">University Athletics Meet
+                            </h2>
+                            <p class="event__description">Cheer for the fastest and strongest athletes on campus.
+                            </p>
+                            <a href="#" class="event__button">Learn More <i
+                                        class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- == EVENT== -->
+                    <div class="event__card">
+                        <div class="event__image-container">
+                            <img src="assets/img/swimming.jpg" alt="Swimming Gala" class="event__image">
+                            <div class="event__overlay">
+                                <span class="event__date">Nov 2, 2024</span>
+                            </div>
+                        </div>
+                        <div class="event__content">
+                            <h2 class="event__name">Annual Swimming Gala
+                            </h2>
+                            <p class="event__description">Dive into excitement with our competitive swimming event.
+                            </p>
+                            <a href="#" class="event__button">Learn More <i
+                                        class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- == EVENT== -->
+                    <div class="event__card">
+                        <div class="event__image-container">
+                            <img src="assets/img/volleyball.jpg" alt="Volleyball Tournament" class="event__image">
+                            <div class="event__overlay">
+                                <span class="event__date">Nov 20,
+                                        2024</span>
+                            </div>
+                        </div>
+                        <div class="event__content">
+                            <h2 class="event__name">Volleyball Showdown</h2>
+                            <p class="event__description">Experience intense volleyball matches between rival teams.</p>
+                            <a href="#" class="event__button">Learn More <i
+                                        class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- == EVENT== -->
+                    <div class="event__card">
+                        <div class="event__image-container">
+                            <img src="assets/img/esports.jpg" alt="E-Sports Tournament" class="event__image">
+                            <div class="event__overlay">
+                                <span class="event__date">Dec 10,
+                                        2024</span>
+                            </div>
+                        </div>
+                        <div class="event__content">
+                            <h2 class="event__name">E-Sports Extravaganza
+                            </h2>
+                            <p class="event__description">Compete in various video game tournaments and win big!</p>
+                            <a href="#" class="event__button">Learn More <i
+                                        class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ================== Footer ============== -->
+        <footer class="footer">
+            <div class="footer__social">
+                <a href="https://www.facebook.com" target="_blank" class="footer__social-link" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="footer__social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer__social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="footer__social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <div class="footer__views">
+                <p>Views: <span id="view-counter">0</span></p>
+            </div>
+
+
+            <div class="footer__sponsors">
+                <h3>Our Sponsors</h3>
+                <a href="https://www.sponsor1.com" id="zeal" target="_blank">
+                    <img src="./assets/img/zeal.png" alt="Sponsor 1">
+                </a>
+                <a href="https://www.sponsor2.com" target="_blank">
+                    <img src="./assets/img/ug.png" alt="Sponsor 2">
+                </a>
+                <a href="https://www.sponsor3.com" target="_blank">
+                    <img src="./assets/img/mplace.jpg" alt="Sponsor 3">
+                </a>
+            </div>
+            <!-- MEDIA COVERAGE -->
+            <div class="footer__media-coverage">
+                <h3>Sports Media Coverage</h3>
+                <ul>
+                    <li><a href="https://olympics.com/en/news/" target="_blank">Olympics News Feed</a></li>
+                    <li><a href="https://www.bbc.com/sport/olympics" target="_blank">BBC Olympics</a></li>
+                    <li><a href="https://www.nbcolympics.com/" target="_blank">NBC Olympics</a></li>
+                    <li><a href="https://www.eurosport.com/olympics/" target="_blank">Eurosport Olympics</a></li>
+                    <li><a href="https://www.espn.com/" target="_blank">ESPN</a></li>
+                    <li><a href="https://www.skysports.com/" target="_blank">Sky Sports</a></li>
+                    <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup" target="_blank">FIFA World Cup</a></li>
+                    <li><a href="https://www.uefa.com/" target="_blank">UEFA</a></li>
+                    <li><a href="https://www.nba.com/" target="_blank">NBA</a></li>
+                    <li><a href="https://www.formula1.com/" target="_blank">Formula 1</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/swiper.js"></script>
+        <script src="assets/js/loader.js"></script>
+        <script>
+            //  view counter script
+            document.addEventListener('DOMContentLoaded', function() {
+                let counterElement = document.getElementById('view-counter');
+                let views = localStorage.getItem('viewCounter') || 0;
+                views++;
+                localStorage.setItem('viewCounter', views);
+                counterElement.textContent = views;
+            });
+        </script>
+</body>
+
+</html>
